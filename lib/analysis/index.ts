@@ -1,0 +1,1 @@
+export { calculateOwnershipDistribution } from './ownership';

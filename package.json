@@ -1,0 +1,29 @@
+{
+  "name": "devflow-ai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:scoring": "tsx tests/test-scoring.ts",
+    "test:classification": "tsx tests/test-classification.ts",
+    "test:simulation": "tsx tests/test-simulation.ts",
+    "test:ownership": "tsx tests/test-ownership.ts",
+    "test:policies": "tsx tests/test-policies.ts",
+    "test:all": "npm run test:scoring && npm run test:classification && npm run test:simulation && npm run test:ownership && npm run test:policies"
+  },
+  "dependencies": {
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.0.0"
+  }
+}
